@@ -1,0 +1,22 @@
+things,gender,gendernumber,number
+read a book,total,0,130
+listen to music,total,0,400
+play game,total,0,70
+social media,total,0,370
+chat,total,0,220
+wondering,total,0,280
+take a rest,total,0,210
+read a book,male,1,40
+listen to music,male,1,210
+play game,male,1,40
+social media,male,1,190
+chat,male,1,100
+wondering,male,1,120
+take a rest,male,1,60
+read a book,female,2,90
+listen to music,female,2,190
+play game,female,2,30
+social media,female,2,180
+chat,female,2,120
+wondering,female,2,160
+take a rest,female,2,150
