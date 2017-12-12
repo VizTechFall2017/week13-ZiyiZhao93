@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background-color: azure;
 }
 
 .tital{
@@ -13,6 +13,7 @@ body{
 p{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
+    color: darkblue;
 }
 
 .svgBox{
@@ -28,10 +29,10 @@ p{
     margin-left: -645px;
 }
 .svgBox3{
-    width: 60%;
+    width: 65%;
     height: 300px;
     float: left;
-    margin-left: -150px;
+    margin-left: -200px;
     margin-top: -100px;
 }
 input{
@@ -39,4 +40,7 @@ input{
     float: left;
     margin-top: -27px;
 }
-
+.gender{
+    margin-left: 10px;
+    margin-top: 300px;
+}

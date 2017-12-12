@@ -95,7 +95,7 @@ queue()
             .key(function(d){return d.gender})
             .entries(populationData);
 
-        var loadData = nestedData.filter(function(d){return d.key == 'total'})[0].values;
+        var loadData = nestedData.filter(function(d){return d.key == 'male'})[0].values;
 
         console.log(nestedData);
 
@@ -108,7 +108,7 @@ queue()
             .attr('class', 'yaxis')
             .call(d3.axisLeft(scaleY));
 
-        drawPoints(loadData,'total');
+        drawPoints(loadData,'male');
 
 
     });
@@ -146,13 +146,13 @@ function drawPoints(pointData,gender){
         .attr('height',function(d){
             return height3-2*marginTop3 - scaleY(+d.number);
         })
-        .attr('fill',"darkorchid");
+        .attr('fill',"royalblue");
 
     rects
         .enter()
         .append('rect')
         .attr('class','bars')
-        .attr('fill',"darkorchid")
+        .attr('fill',"royalblue")
         .attr('id',function (d) {return d.things})
         .attr('x',function(d){
             return scaleX(d.things);
