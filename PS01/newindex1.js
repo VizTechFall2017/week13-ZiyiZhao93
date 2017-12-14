@@ -7,11 +7,24 @@ var height2 = document.getElementById('svg2').clientHeight;
 var width3 = document.getElementById('svg3').clientWidth;
 var height3 = document.getElementById('svg3').clientHeight;
 
+var width4 = document.getElementById('svg4').clientWidth;
+var height4 = document.getElementById('svg4').clientHeight;
+
 var marginLeft = 0;
 var marginTop = 0;
 
 var marginLeft3 = 100;
 var marginTop3 = 100;
+
+var marginLeft4 = 100;
+var marginTop4 = 100;
+
+var sexData = [];
+
+var clicked = true;
+
+var womenData;
+var menData;
 
 var nestedData = [];
 
@@ -26,6 +39,10 @@ var svg2 = d3.select('#svg2')
 var svg3 = d3.select('#svg3')
     .append('g')
     .attr('transform', 'translate(' + marginLeft3 + ',' + marginTop3 + ')');
+
+var svg4 = d3.select('#svg4')
+    .append('g')
+    .attr('transform', 'translate(' + marginLeft4 + ',' + marginTop4 + ')');
 
 
 var albersProjection = d3.geoAlbers()
@@ -45,13 +62,17 @@ var colorScale = d3.scaleLinear().range(['white','white']);
 var scaleX = d3.scaleBand().rangeRound([0, width3-2*marginLeft3]).padding(0.1);
 var scaleY = d3.scaleLinear().range([height3-2*marginTop3, 0]);
 
+var scaleX1 = d3.scaleBand().rangeRound([0, width4-2*marginLeft4]).padding(0.1);
+var scaleY1 = d3.scaleLinear().range([height4-2*marginTop4, 0]);
+
 
 queue()
     .defer(d3.json, "./Boston.json")
     .defer(d3.json, "./Orange.json")
-    .defer(d3.csv, "./subway.csv")
+    .defer(d3.csv, "./totalsubway.csv")
+    .defer(d3.csv,"./subway3.csv")
     .defer(d3.csv, "./circle1.csv")
-    .await(function(err, mapData,lineData, populationData,circleData){
+    .await(function(err, mapData,lineData, populationData,genderData,circleData){
 
 
         populationData.forEach(function(d){
@@ -107,8 +128,6 @@ queue()
             .key(function(d){return d.gender})
             .entries(populationData);
 
-        console.log(nestedData);
-
         var loadData = nestedData.filter(function(d){return d.key == 'total'})[0].values;
 
 
@@ -123,30 +142,58 @@ queue()
 
         svg3.append('text')
             .text('Total')
-            .attr('transform','translate(160, 150)')
+            .attr('transform','translate(560, 100)')
             .attr('font-size', 15);
 
-        svg3.append('text')
-            .text('Male')
-            .attr('transform','translate(230, 150)')
-            .attr('font-size', 15);
+        sexData = d3.nest()
+            .key(function (d) {return d.week})
+            .entries(genderData);
 
-        svg3.append('text')
-            .text('Female')
-            .attr('transform','translate(290, 150)')
-            .attr('font-size', 15);
+        var incomeData = sexData.filter(function(d){return d.key == 'Mon.'})[0].values;
+
+        svg4.append("g")
+            .attr('class','xaxis1')
+            .attr('transform','translate(0,'+ (height4-2*marginTop4) +')')
+            .call(d3.axisBottom(scaleX1));
+
+        svg4.append("g")
+            .attr('class', 'yaxis1')
+            .call(d3.axisLeft(scaleY1));
+
+        svg4.selectAll('circles')
+            .data(incomeData)
+            .enter()
+            .append('circle')
+            .attr('class','w_dataPoints')
+            .attr('cx',function(d){return scaleX1(d.things);})
+            .attr('cy',function(d){return scaleY1(d.people)})
+            .attr('r', 5)
+            .attr('fill', "palevioletred");
+
+        svg4.selectAll('circles')
+            .data(incomeData)
+            .enter()
+            .append('circle')
+            .attr('class','m_dataPoints')
+            .attr('cx',function(d){return scaleX1(d.things);})
+            .attr('cy',function(d){return scaleY1(d.people)})
+            .attr('r', 5)
+            .attr('fill', "mediumturquoise");
 
 
-        drawPoints(loadData,'total');
+        drawPoints(loadData,'total',incomeData,'Mon.');
 
     });
 
 
-function drawPoints(pointData,gender){
+function drawPoints(pointData){
 
 
     scaleX.domain(pointData.map(function(d){return d.things;}));
     scaleY.domain([0, d3.max(pointData.map(function(d){return +d.number}))]);
+
+    scaleX1.domain(pointData.map(function(d){return d.things;}));
+    scaleY1.domain([0, d3.max(pointData.map(function(d){return +d.people}))]);
 
 
     d3.selectAll('.xaxis')
@@ -154,6 +201,12 @@ function drawPoints(pointData,gender){
 
     d3.selectAll('.yaxis')
         .call(d3.axisLeft(scaleY));
+
+    d3.selectAll('.xaxis1')
+        .call(d3.axisBottom(scaleX1));
+
+    d3.selectAll('.yaxis1')
+        .call(d3.axisLeft(scaleY1));
 
 
     var rects = svg3.selectAll('.bars')
@@ -176,23 +229,14 @@ function drawPoints(pointData,gender){
         .attr('height',function(d){
             return height3-2*marginTop3 - scaleY(+d.number);
         })
-        .attr('fill',function(d){
-            if (gender == 'total'){return "mediumslateblue"}
-            if (gender == 'male'){return "mediumturquoise"}
-            if (gender == 'female'){return "palevioletred"}
-        });
+        .attr('fill',"mediumslateblue");
 
-    console.log(gender);
 
     rects
         .enter()
         .append('rect')
         .attr('class','bars')
-        .attr('fill',function(d){
-            if (gender == 'total'){return "mediumslateblue"}
-            if (gender == 'male'){return "lightblue"}
-            if (gender == 'female'){return "pink"}
-        })
+        .attr('fill',"mediumslateblue")
         .attr('id',function (d) {return d.things})
         .attr('x',function(d){
             return scaleX(d.things);
@@ -205,35 +249,18 @@ function drawPoints(pointData,gender){
         })
         .attr('height',function(d){
             return height3-2*marginTop3 - scaleY(+d.number);
-        })
-
-}
+        });
 
 
-function updateData(selectedGender){
+    d3.selectAll('w_dataPoints')
+        .data(pointData)
+        .attr('cx',function(d){return scaleX1(d.things);})
+        .attr('cy',function(d){return scaleY1(d.people)});
 
-
-
-    return nestedData.filter(function(d){return d.key == selectedGender})[0].values;
-}
-
-
-function sliderMoved(value){
-
-    if(value == 0){
-        newData = updateData('total');
-        drawPoints(newData,'total');
-    }
-
-    if(value == 1){
-        newData = updateData('male');
-        drawPoints(newData,'male');
-    }
-
-    if(value == 2){
-        newData = updateData('female');
-        drawPoints(newData,'female');
-    }
+    d3.selectAll('m_dataPoints')
+        .data(pointData)
+        .attr('cx',function(d){return scaleX1(d.things);})
+        .attr('cy',function(d){return scaleY1(d.people)});
 
 
 }
