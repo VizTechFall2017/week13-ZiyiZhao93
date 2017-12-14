@@ -38,6 +38,9 @@ var albersProjection = d3.geoAlbers()
 path = d3.geoPath()
     .projection(albersProjection);
 
+var cityLookup = d3.map();
+
+var colorScale = d3.scaleLinear().range(['white','white']);
 
 var scaleX = d3.scaleBand().rangeRound([0, width3-2*marginLeft3]).padding(0.1);
 var scaleY = d3.scaleLinear().range([height3-2*marginTop3, 0]);
@@ -46,18 +49,27 @@ var scaleY = d3.scaleLinear().range([height3-2*marginTop3, 0]);
 queue()
     .defer(d3.json, "./Boston.json")
     .defer(d3.json, "./Orange.json")
+    .defer(d3.csv, "./subway.csv")
     .defer(d3.csv, "./circle1.csv")
-    .defer(d3.csv, "./totalsubway.csv")
-    .await(function(err, mapData,lineData,circleData,populationData){
+    .await(function(err, mapData,lineData, populationData,circleData){
 
-        svg.selectAll("path")
-            .data(mapData.features)
+
+        populationData.forEach(function(d){
+            cityLookup.set(d.population);
+        });
+
+
+        colorScale.domain([0, d3.max(populationData.map(function(d){return +d.population}))]);
+
+        svg.selectAll("path")               //make empty selection
+            .data(mapData.features)          //bind to the features array in the map data
             .enter()
-            .append("path")
-            .attr("d", path)
+            .append("path")                 //add the paths to the DOM
+            .attr("d", path)                //actually draw them
             .attr("class", "feature")
-            .attr('fill','white')
-            .attr('opacity', 0.5)
+            .attr('fill',function(d){
+                return colorScale(cityLookup.get(d.properties));
+            })
             .attr('stroke','black')
             .attr('stroke-width',.2);
 
@@ -95,9 +107,10 @@ queue()
             .key(function(d){return d.gender})
             .entries(populationData);
 
+        console.log(nestedData);
+
         var loadData = nestedData.filter(function(d){return d.key == 'total'})[0].values;
 
-        console.log(nestedData);
 
         svg3.append("g")
             .attr('class','xaxis')
@@ -108,16 +121,33 @@ queue()
             .attr('class', 'yaxis')
             .call(d3.axisLeft(scaleY));
 
+        svg3.append('text')
+            .text('Total')
+            .attr('transform','translate(160, 150)')
+            .attr('font-size', 15);
+
+        svg3.append('text')
+            .text('Male')
+            .attr('transform','translate(230, 150)')
+            .attr('font-size', 15);
+
+        svg3.append('text')
+            .text('Female')
+            .attr('transform','translate(290, 150)')
+            .attr('font-size', 15);
+
+
         drawPoints(loadData,'total');
 
-
     });
+
 
 function drawPoints(pointData,gender){
 
 
     scaleX.domain(pointData.map(function(d){return d.things;}));
     scaleY.domain([0, d3.max(pointData.map(function(d){return +d.number}))]);
+
 
     d3.selectAll('.xaxis')
         .call(d3.axisBottom(scaleX));
@@ -146,13 +176,23 @@ function drawPoints(pointData,gender){
         .attr('height',function(d){
             return height3-2*marginTop3 - scaleY(+d.number);
         })
-        .attr('fill',"darkorchid");
+        .attr('fill',function(d){
+            if (gender == 'total'){return "mediumslateblue"}
+            if (gender == 'male'){return "mediumturquoise"}
+            if (gender == 'female'){return "palevioletred"}
+        });
+
+    console.log(gender);
 
     rects
         .enter()
         .append('rect')
         .attr('class','bars')
-        .attr('fill',"darkorchid")
+        .attr('fill',function(d){
+            if (gender == 'total'){return "mediumslateblue"}
+            if (gender == 'male'){return "lightblue"}
+            if (gender == 'female'){return "pink"}
+        })
         .attr('id',function (d) {return d.things})
         .attr('x',function(d){
             return scaleX(d.things);
@@ -170,18 +210,30 @@ function drawPoints(pointData,gender){
 }
 
 
+function updateData(selectedGender){
 
 
 
+    return nestedData.filter(function(d){return d.key == selectedGender})[0].values;
+}
 
 
+function sliderMoved(value){
+
+    if(value == 0){
+        newData = updateData('total');
+        drawPoints(newData,'total');
+    }
+
+    if(value == 1){
+        newData = updateData('male');
+        drawPoints(newData,'male');
+    }
+
+    if(value == 2){
+        newData = updateData('female');
+        drawPoints(newData,'female');
+    }
 
 
-
-
-
-
-
-
-
-
+}

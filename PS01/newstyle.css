@@ -29,10 +29,10 @@ p{
     margin-left: -645px;
 }
 .svgBox3{
-    width: 65%;
+    width: 60%;
     height: 300px;
     float: left;
-    margin-left: -200px;
+    margin-left: -150px;
     margin-top: -100px;
 }
 input{
@@ -40,7 +40,8 @@ input{
     float: left;
     margin-top: -27px;
 }
-.gender{
-    margin-left: 10px;
-    margin-top: 300px;
+
+button{
+    margin-left: 100px;
+    margin-top: 30px;
 }
