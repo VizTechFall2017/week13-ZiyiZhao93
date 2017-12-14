@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65abf8c2-f1bb-42c8-ab25-7eddc29427d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS02/VT_Presentation_Ziyi Zhao.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/index3.html" afterPath="$PROJECT_DIR$/PS01/index3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/index4.html" afterPath="$PROJECT_DIR$/PS01/index4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/index2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/newindex2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/newstyle2.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,11 +48,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index4.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PS01/index4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
+            <state relative-caret-position="261">
               <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subway3.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PS01/subway3.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PS01/index2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newstyle2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PS01/newstyle2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newindex2.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PS01/newindex2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,8 +104,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -87,7 +127,6 @@
         <option value="$PROJECT_DIR$/PS01/newstyle22.css" />
         <option value="$PROJECT_DIR$/PS01/subway2.csv" />
         <option value="$PROJECT_DIR$/PS01/newstyle3.css" />
-        <option value="$PROJECT_DIR$/PS01/index2.html" />
         <option value="$PROJECT_DIR$/PS01/style3.css" />
         <option value="$PROJECT_DIR$/PS01/new.js" />
         <option value="$PROJECT_DIR$/PS01/subway.csv" />
@@ -101,10 +140,12 @@
         <option value="$PROJECT_DIR$/PS01/newindex.js" />
         <option value="$PROJECT_DIR$/PS01/style2.css" />
         <option value="$PROJECT_DIR$/PS01/new2.js" />
-        <option value="$PROJECT_DIR$/PS01/newindex2.js" />
         <option value="$PROJECT_DIR$/PS01/index.html" />
         <option value="$PROJECT_DIR$/PS01/index3.html" />
         <option value="$PROJECT_DIR$/PS01/index4.html" />
+        <option value="$PROJECT_DIR$/PS01/index2.html" />
+        <option value="$PROJECT_DIR$/PS01/newstyle2.css" />
+        <option value="$PROJECT_DIR$/PS01/newindex2.js" />
       </list>
     </option>
   </component>
@@ -115,10 +156,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="498" />
-    <option name="y" value="198" />
-    <option name="width" value="1279" />
-    <option name="height" value="766" />
+    <option name="x" value="390" />
+    <option name="y" value="23" />
+    <option name="width" value="1249" />
+    <option name="height" value="764" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -195,17 +236,18 @@
       <option name="presentableId" value="Default" />
       <updated>1513013024580</updated>
       <workItem from="1513013025820" duration="22043000" />
-      <workItem from="1513119425131" duration="131000" />
+      <workItem from="1513119425131" duration="884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22174000" />
+    <option name="totallyTimeSpent" value="22927000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="498" y="198" width="1279" height="766" extended-state="0" />
+    <frame x="390" y="23" width="1249" height="764" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.241595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24739791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -319,15 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/subway3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/newindex2.js" />
-    <entry file="file://$PROJECT_DIR$/PS01/index2.html" />
     <entry file="file://$PROJECT_DIR$/PS01/newindex.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2310">
@@ -354,8 +387,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PS01/index4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="261">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/subway3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/newstyle2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/newindex2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
