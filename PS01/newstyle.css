@@ -15,6 +15,7 @@ body{
     height: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -40px;
     margin-bottom: 200px;
 }
 
@@ -22,6 +23,14 @@ p{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     color: orange;
+    text-align: center;
+}
+
+.page{
+    width: 750px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .svgBox{
@@ -29,14 +38,14 @@ p{
     width: 650px;
     float: left;
     margin-left: -50px;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 .svgBox2{
     height: 700px;
     width: 500px;
     float: left;
     margin-left: -645px;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 .svgBox3{
     width: 60%;
@@ -49,7 +58,7 @@ p{
 .svgBox4{
     width:60%;
     height: 450px;
-    margin-top: -500px;
+    margin-top: -560px;
     margin-left: 450px;
     float: left;
 
@@ -57,13 +66,16 @@ p{
 
 .buttonbox{
     margin-left: 1100px;
-    margin-top: -360px;
+    margin-top: -370px;
     width: 20px;
     height: 60px;
     float: left;
 }
 
+
 button{
     width: 45px;
     height: 20px;
+    background-color: mediumslateblue;
+    color: white;
 }

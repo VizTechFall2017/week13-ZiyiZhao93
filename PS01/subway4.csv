@@ -1,0 +1,99 @@
+sex,week,things,thingnumber,people
+women,Mon.,read a book,1,10
+women,Tue.,read a book,1,11
+women,Wed.,read a book,1,13
+women,Thu.,read a book,1,15
+women,Fri.,read a book,1,9
+women,Sat.,read a book,1,14
+women,Sun.,read a book,1,18
+women,Mon.,listen to music,2,20
+women,Tue.,listen to music,2,23
+women,Wed.,listen to music,2,18
+women,Thu.,listen to music,2,27
+women,Fri.,listen to music,2,34
+women,Sat.,listen to music,2,29
+women,Sun.,listen to music,2,39
+women,Mon.,play game,3,2
+women,Tue.,play game,3,5
+women,Wed.,play game,3,3
+women,Thu.,play game,3,4
+women,Fri.,play game,3,7
+women,Sat.,play game,3,8
+women,Sun.,play game,3,1
+women,Mon.,social media,4,20
+women,Tue.,social media,4,23
+women,Wed.,social media,4,31
+women,Thu.,social media,4,28
+women,Fri.,social media,4,19
+women,Sat.,social media,4,27
+women,Sun.,social media,4,32
+women,Mon.,chat,5,10
+women,Tue.,chat,5,14
+women,Wed.,chat,5,20
+women,Thu.,chat,5,18
+women,Fri.,chat,5,9
+women,Sat.,chat,5,23
+women,Sun.,chat,5,26
+women,Mon.,wondering,6,18
+women,Tue.,wondering,6,23
+women,Wed.,wondering,6,27
+women,Thu.,wondering,6,20
+women,Fri.,wondering,6,28
+women,Sat.,wondering,6,21
+women,Sun.,wondering,6,23
+women,Mon.,take a rest,7,16
+women,Tue.,take a rest,7,20
+women,Wed.,take a rest,7,23
+women,Thu.,take a rest,7,18
+women,Fri.,take a rest,7,27
+women,Sat.,take a rest,7,19
+women,Sun.,take a rest,7,27
+men,Mon.,read a book,1,3
+men,Tue.,read a book,1,5
+men,Wed.,read a book,1,4
+men,Thu.,read a book,1,8
+men,Fri.,read a book,1,3
+men,Sat.,read a book,1,7
+men,Sun.,read a book,1,10
+men,Mon.,listen to music,2,23
+men,Tue.,listen to music,2,30
+men,Wed.,listen to music,2,28
+men,Thu.,listen to music,2,37
+men,Fri.,listen to music,2,31
+men,Sat.,listen to music,2,26
+men,Sun.,listen to music,2,35
+men,Mon.,play game,3,3
+men,Tue.,play game,3,1
+men,Wed.,play game,3,5
+men,Thu.,play game,3,7
+men,Fri.,play game,3,6
+men,Sat.,play game,3,2
+men,Sun.,play game,3,6
+men,Mon.,social media,4,25
+men,Tue.,social media,4,30
+men,Wed.,social media,4,28
+men,Thu.,social media,4,23
+men,Fri.,social media,4,26
+men,Sat.,social media,4,17
+men,Sun.,social media,4,41
+men,Mon.,chat,5,9
+men,Tue.,chat,5,10
+men,Wed.,chat,5,16
+men,Thu.,chat,5,13
+men,Fri.,chat,5,18
+men,Sat.,chat,5,15
+men,Sun.,chat,5,19
+men,Mon.,wondering,6,13
+men,Tue.,wondering,6,20
+men,Wed.,wondering,6,18
+men,Thu.,wondering,6,24
+men,Fri.,wondering,6,15
+men,Sat.,wondering,6,17
+men,Sun.,wondering,6,13
+men,Mon.,take a rest,7,6
+men,Tue.,take a rest,7,8
+men,Wed.,take a rest,7,7
+men,Thu.,take a rest,7,10
+men,Fri.,take a rest,7,5
+men,Sat.,take a rest,7,9
+men,Sun.,take a rest,7,15

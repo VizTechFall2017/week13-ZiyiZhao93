@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65abf8c2-f1bb-42c8-ab25-7eddc29427d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/OrangeLine.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/index3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/index4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/newindex2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/newindex3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/newindex4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/newstyle2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/newstyle3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PS01/newstyle4.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/jquery-3.2.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/subway2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PS01/subway4.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/PS01/circle1.csv" afterPath="$PROJECT_DIR$/PS01/circle.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/PS01/newindex1.js" afterPath="$PROJECT_DIR$/PS01/newindex.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/index.html" afterPath="$PROJECT_DIR$/PS01/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/newindex1.js" afterPath="$PROJECT_DIR$/PS01/newindex1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/newstyle.css" afterPath="$PROJECT_DIR$/PS01/newstyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PS01/subway3.csv" afterPath="$PROJECT_DIR$/PS01/subway3.csv" />
     </list>
@@ -33,18 +28,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PS01/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+            <state relative-caret-position="222">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newindex1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PS01/newindex1.js">
+      <file leaf-file-name="newindex.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PS01/newindex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-353">
-              <caret line="158" column="24" lean-forward="true" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="182" column="34" lean-forward="true" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -53,18 +48,18 @@
       <file leaf-file-name="newstyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PS01/newstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state relative-caret-position="15">
+              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subway3.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="subway3.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PS01/subway3.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="489">
+              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -84,6 +79,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>console</find>
+      <find>total</find>
+      <find>svg4</find>
+      <find>scalex</find>
+      <find>scaley</find>
+      <find>w_datapoints</find>
+      <find>scalex1</find>
+      <find>selectAll</find>
+      <find>circle</find>
+      <find>filter</find>
+      <find>mouseov</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,13 +118,13 @@
         <option value="$PROJECT_DIR$/PS01/index4.html" />
         <option value="$PROJECT_DIR$/PS01/index2.html" />
         <option value="$PROJECT_DIR$/PS01/newstyle2.css" />
-        <option value="$PROJECT_DIR$/PS01/newstyle1.css" />
-        <option value="$PROJECT_DIR$/PS01/newindex.js" />
         <option value="$PROJECT_DIR$/PS01/newindex2.js" />
+        <option value="$PROJECT_DIR$/PS01/subway3.csv" />
         <option value="$PROJECT_DIR$/PS01/newindex1.js" />
+        <option value="$PROJECT_DIR$/PS01/newstyle1.css" />
         <option value="$PROJECT_DIR$/PS01/index.html" />
         <option value="$PROJECT_DIR$/PS01/newstyle.css" />
-        <option value="$PROJECT_DIR$/PS01/subway3.csv" />
+        <option value="$PROJECT_DIR$/PS01/newindex.js" />
       </list>
     </option>
   </component>
@@ -184,6 +189,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PS01" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/PS01" />
       <recent name="$PROJECT_DIR$/PS02" />
@@ -213,12 +221,12 @@
       <updated>1513013024580</updated>
       <workItem from="1513013025820" duration="22043000" />
       <workItem from="1513119425131" duration="1593000" />
-      <workItem from="1513276588087" duration="6270000" />
+      <workItem from="1513276588087" duration="17938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29906000" />
+    <option name="totallyTimeSpent" value="41574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1249" height="764" extended-state="0" />
@@ -227,7 +235,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24739791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -249,7 +257,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -301,7 +311,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/newindex1.js">
+    <entry file="file://$PROJECT_DIR$/PS01/newindex.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
@@ -317,7 +327,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/newindex1.js">
+    <entry file="file://$PROJECT_DIR$/PS01/newindex.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2310">
           <caret line="154" column="32" lean-forward="true" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="32" />
@@ -357,7 +367,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PS01/subway.csv" />
-    <entry file="file://$PROJECT_DIR$/PS01/subway2.csv" />
     <entry file="file://$PROJECT_DIR$/PS01/style2.css" />
     <entry file="file://$PROJECT_DIR$/PS01/newindex3.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -399,22 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/totalsubway.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/circle1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PS01/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -431,34 +424,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/totalsubway.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/subway2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/jquery-3.2.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/subway4.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/circle.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PS01/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/newstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PS01/newindex1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-353">
-          <caret line="158" column="24" lean-forward="true" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
+        <state relative-caret-position="222">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PS01/subway3.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="489">
+          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/newstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS01/newindex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="182" column="34" lean-forward="true" selection-start-line="182" selection-start-column="34" selection-end-line="182" selection-end-column="34" />
           <folding />
         </state>
       </provider>
